@@ -24,7 +24,7 @@
             <v-list-tile-title>Novo veículo</v-list-tile-title>
           </v-list-tile-content>
         </v-list-tile>
-        <v-list-tile @click="go('/scheduling')">
+        <v-list-tile @click="go('/schedule')">
           <v-list-tile-action>
             <v-icon>calendar_today</v-icon>
           </v-list-tile-action>
