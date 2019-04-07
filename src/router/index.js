@@ -9,17 +9,17 @@ Vue.use(Router)
 export default new Router({
   routes: [
     {
-      path: '/',
+      path: '/user',
       name: 'CreateUser',
       component: CreateUser
     },
     {
-      path: 'create-vehicle',
+      path: '/vehicle',
       name: 'CreateVehicle',
       component: CreateVehicle
     },
     {
-      path: 'create-scheduling',
+      path: '/schedule',
       name: 'CreateScheduling',
       component: CreateScheduling
     }

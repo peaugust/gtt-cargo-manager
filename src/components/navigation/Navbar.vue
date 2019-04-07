@@ -8,7 +8,7 @@
       app
     >
       <v-list dense>
-        <v-list-tile @click="">
+        <v-list-tile @click="go('/user')">
           <v-list-tile-action>
             <v-icon>people</v-icon>
           </v-list-tile-action>
@@ -16,7 +16,7 @@
             <v-list-tile-title>Novo usuário</v-list-tile-title>
           </v-list-tile-content>
         </v-list-tile>
-        <v-list-tile @click="">
+        <v-list-tile @click="go('/vehicle')">
           <v-list-tile-action>
             <v-icon>add</v-icon>
           </v-list-tile-action>
@@ -24,7 +24,7 @@
             <v-list-tile-title>Novo veículo</v-list-tile-title>
           </v-list-tile-content>
         </v-list-tile>
-        <v-list-tile @click="">
+        <v-list-tile @click="go('/scheduling')">
           <v-list-tile-action>
             <v-icon>calendar_today</v-icon>
           </v-list-tile-action>
@@ -58,7 +58,11 @@ export default {
       right: false,
     }
   },
-  methods: {}
+  methods: {
+    go(route){
+      this.$router.push(route);
+    }
+  }
 }
 </script>
 
