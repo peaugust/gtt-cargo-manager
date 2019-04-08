@@ -18,7 +18,7 @@
         </v-list-tile>
         <v-list-tile @click="go('/vehicle')">
           <v-list-tile-action>
-            <v-icon>add</v-icon>
+            <v-icon>local_shipping</v-icon>
           </v-list-tile-action>
           <v-list-tile-content>
             <v-list-tile-title>Novo veículo</v-list-tile-title>
