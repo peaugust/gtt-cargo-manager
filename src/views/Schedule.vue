@@ -1,3 +1,4 @@
+<!--TODO: INSERIR DIALOG PARA A ADIÇÃO DE AGENDAMENTO-->
 <template>
   <v-container>
     <v-content>
@@ -9,18 +10,20 @@
                 <div class="headline">Agendamentos</div>
                 <span>Visualize os agendamentos criados abaixo</span>
               </div>
+              <v-spacer></v-spacer>
+              <v-btn><v-icon left>add</v-icon>Novo agendamento</v-btn>
             </v-card-title>
             <v-card-text>
               <v-data-table
                 :headers="headers"
-                :items="desserts"
+                :items="schedules"
               >
                 <template v-slot:items="props">
                   <td>{{ props.item.name }}</td>
-                  <td class="text-xs-right">{{ props.item.calories }}</td>
-                  <td class="text-xs-right">{{ props.item.fat }}</td>
-                  <td class="text-xs-right">{{ props.item.carbs }}</td>
-                  <td class="text-xs-right">{{ props.item.protein }}</td>
+                  <td class="text-xs-right">{{ props.item. vehicle}}</td>
+                  <td class="text-xs-right">{{ props.item.entrance }}</td>
+                  <td class="text-xs-right">{{ props.item.exit }}</td>
+                  <td class="text-xs-right">{{ props.item.operation }}</td>
                 </template>
               </v-data-table>
             </v-card-text>
@@ -39,26 +42,26 @@ export default {
       headers: [
         {
           text: 'Motorista',
-          align: 'left',
           sortable: false,
           value: 'name'
         },
-        { text: 'Veículo', value: 'calories', sortable: false},
-        { text: 'Entrada', value: 'fat', sortable: false },
-        { text: 'Saída', value: 'carbs', sortable: false},
-        { text: 'Operação', value: 'protein', sortable: false}
+        { text: 'Veículo', value: 'vehicle', sortable: false},
+        { text: 'Entrada', value: 'entrance', sortable: false},
+        { text: 'Saída', value: 'exit', sortable: false},
+        { text: 'Operação', value: 'operation', sortable: false}
       ],
-      desserts: [
+      schedules: [
         {
           name: 'Arnaldo',
-          calories: 'Cargo',
-          fat: '12/01/2010',
-          carbs: '12/01/2010',
-          protein: 'Descarga'
-        },
+          vehicle: 'Cargo',
+          entrance: '12/01/2010',
+          exit: '12/01/2010',
+          operation: 'Descarga'
+        }
       ]
     }
-  }
+  },
+  methods: {}
 }
 </script>
 
