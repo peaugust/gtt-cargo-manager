@@ -55,12 +55,12 @@ export default {
     return {
       drawer: false,
       drawerRight: false,
-      right: false,
+      right: false
     }
   },
   methods: {
-    go(route){
-      this.$router.push(route);
+    go (route) {
+      this.$router.push(route)
     }
   }
 }

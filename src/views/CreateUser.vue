@@ -25,13 +25,13 @@
 </template>
 
 <script>
-  import FormNewUser from './../components/forms/FormNewUser'
-  export default {
-    name: 'CreateUser',
-    components: {
-      FormNewUser
-    },
+import FormNewUser from './../components/forms/FormNewUser'
+export default {
+  name: 'CreateUser',
+  components: {
+    FormNewUser
   }
+}
 </script>
 
 <style scoped>
