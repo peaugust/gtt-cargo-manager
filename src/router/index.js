@@ -19,7 +19,7 @@ export default new Router({
       component: CreateVehicle
     },
     {
-      path: '/schedule',
+      path: '/',
       name: 'Schedule',
       component: Schedule
     }
