@@ -2,7 +2,7 @@
   <v-container fluid grid-list-md>
     <v-layout row wrap>
       <v-flex xs12 md6 d-flex>
-        <v-text-field label="Nome" v-model="user.name"></v-text-field>
+        <v-text-field label="Nome"  v-model="user.name"></v-text-field>
       </v-flex>
       <v-flex xs12 md6 d-flex>
         <v-text-field label="Sobrenome" v-model="user.surnname"></v-text-field>
@@ -37,7 +37,7 @@
         </v-menu>
       </v-flex>
       <v-flex xs12 md6 d-flex>
-        <v-text-field label="CPF" v-model="user.CPF"></v-text-field>
+        <v-text-field label="CPF" mask="###.###.###-##" v-model="user.CPF"></v-text-field>
       </v-flex>
       <v-flex xs12 md6 d-flex>
         <v-text-field label="Carteira de motorista" v-model="user.license"></v-text-field>
@@ -48,7 +48,7 @@
       <v-flex xs12 md6 d-flex>
         <v-text-field label="E-mail" v-model="user.email"></v-text-field>
       </v-flex> <v-flex xs12 md6 d-flex>
-        <v-text-field label="Celular" v-model="user.phoneNumber"></v-text-field>
+        <v-text-field label="Celular" mask="(##)# ####-####" v-model="user.phoneNumber"></v-text-field>
       </v-flex>
     </v-layout>
   </v-container>
@@ -69,7 +69,7 @@ export default {
         license: '',
         address: '',
         email: '',
-        phoneNumber: '',
+        phoneNumber: ''
       }
     }
   },
